@@ -7,6 +7,11 @@ body{
     font-family: Helvetica,Arial,sans-serif;
     border: 1px solid red;
 }
+h1,h2{
+    color: white;
+    font-weight: 700;
+    letter-spacing: -0.09rem;
+}
 /*Navbar*/
 #container-navbar{
     padding: 15px 0;
@@ -30,7 +35,7 @@ body{
     margin: 12px 15px;
 }
 /*Main*/
-
+/*Section carousel*/
 #carousel,
 #carousel a{
     text-align: center;
@@ -49,17 +54,37 @@ body{
 }
 #carousel .btn-purple{
     background-color: #7c26f8;
+    transition: background 0.4s;
+}
+#carousel .btn-purple:hover{
+    background-color: #6207e3;
+    
 }
 #carousel .btn-white{
     border: 2px solid white;
+    transition: background 0.4s, color 0.4s;
 }
+#carousel .btn-white:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+/*Section: about-spotify*/
 #about-spotify {
     padding: 20px 0;
 }
-#about-spotify img{
-    width: 240px;
-    margin: 15px;
+/*Lado esquerdo*/
+#albums .row{
+    padding: 10px 0;
 }
+/*Lado direito*/
+#about-spotify h1,
+#about-spotify h2{
+    color: #7c26f8;
+}
+#about-spotify h1{
+    font-size: 3rem;
+}
+/*Section cellphones*/
 /*Media Queries*/
 /*Altura*/
 @media (max-height: 375px){
@@ -110,6 +135,7 @@ body{
     #carousel a{
         padding: 10px 50px;
         font-size: 1.25em;
+        font-weight: 400;
     }
 }
 
