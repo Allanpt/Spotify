@@ -27,7 +27,7 @@ h1,h2{
     color: white;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
-	color: #9bf0e1;
+	color: #1ed760;
 }
 .divisor {
     width: 1px;
@@ -70,7 +70,9 @@ h1,h2{
 }
 /*Section: about-spotify*/
 #about-spotify {
+    position: relative;
     padding: 20px 0;
+    z-index: -2;
 }
 /*Lado esquerdo*/
 #albums .row{
@@ -85,6 +87,80 @@ h1,h2{
     font-size: 3rem;
 }
 /*Section cellphones*/
+#cellphones{
+    padding: 20px 0;
+}
+#cellphones h1{
+    font-size: 3rem;
+    margin-top: 20px;
+}
+#cellphones h2{
+    color: #9bf0e1;
+}
+#cellphones p{
+    color: white;
+}
+#cellphones .rotacao{
+    position: relative;
+    transform: rotate(32deg);
+    padding-left: 80px;
+    z-index: -1;
+}
+#cellphones img{
+    width: 300px;
+}
+/*Footer*/
+footer{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #000;
+}
+footer h6{
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+    color: #918787;
+}
+footer li{
+    margin-left: 5px;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+footer a {
+    color: #ffffff;
+    
+}
+footer #social-medias a{
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 2rem;
+    background-color: #2c2828;
+    
+}
+footer a:hover{
+    text-decoration: none;
+    color: #1ed760;
+}
+footer #social-medias a:hover{
+    color: #1ed760;
+}
+footer #social-medias .instagram{
+    padding: 13px;
+}
+footer #social-medias .twitter{
+    padding: 11px;
+}
+footer #social-medias .facebook{
+    padding: 17px;
+}
+footer #social-medias {
+    display: flex;
+    height: 54px;
+    gap: 10px;
+}
 /*Media Queries*/
 /*Altura*/
 @media (max-height: 375px){
