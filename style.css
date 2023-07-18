@@ -1,11 +1,11 @@
 html, body, #carousel{
     height: 100vh;
+    overflow-x: hidden;
 }
 body{
     background: url(assets/capa.png), url(assets/ruido.png), linear-gradient(52deg,#ff4169,#7c26f8);
     background-attachment: fixed;
     font-family: Helvetica,Arial,sans-serif;
-    border: 1px solid red;
 }
 h1,h2{
     color: white;
@@ -47,7 +47,15 @@ h1,h2{
     letter-spacing: -0.05em;
     margin-bottom: 50px;
 }
-#carousel a{
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 30px;
+    height: 30px;
+}
+#carousel .btn-purple,
+#carousel .btn-white{
     text-transform: uppercase;
     border-radius: 50px;
     padding: 10px 20px;
@@ -92,7 +100,6 @@ h1,h2{
 }
 #cellphones h1{
     font-size: 3rem;
-    margin-top: 20px;
 }
 #cellphones h2{
     color: #9bf0e1;
@@ -102,13 +109,11 @@ h1,h2{
 }
 #cellphones .rotacao{
     position: relative;
-    transform: rotate(32deg);
+    transform: rotate(30deg);
     padding-left: 80px;
     z-index: -1;
 }
-#cellphones img{
-    width: 300px;
-}
+
 /*Footer*/
 footer{
     padding-top: 50px;
@@ -182,7 +187,8 @@ footer #social-medias {
     #carousel .btn-purple{
         margin-bottom: 50px;
     }
-    #carousel a{
+    #carousel .btn-purple,
+    #carousel .btn-white{
         padding: 10px 20px;
         font-size: 0.7em;
         font-weight: 600;
@@ -195,7 +201,8 @@ footer #social-medias {
     #carousel .btn-purple{
         margin-bottom: 50px;
     }
-    #carousel a{
+    #carousel .btn-purple,
+    #carousel .btn-white{
         padding: 10px 20px;
         font-size: 1em;
         font-weight: 600;
@@ -208,7 +215,8 @@ footer #social-medias {
     #carousel .btn-purple{
         margin-bottom: 50px;
     }
-    #carousel a{
+    #carousel .btn-purple,
+    #carousel .btn-white{
         padding: 10px 50px;
         font-size: 1.25em;
         font-weight: 400;
@@ -219,7 +227,8 @@ footer #social-medias {
     #carousel h1{
         font-size: 3.4em;
     }
-    #carousel a{
+    #carousel .btn-purple,
+    #carousel .btn-white{
         padding: 15px 90px;
         font-size: 1.25em;
     }
@@ -233,19 +242,27 @@ footer #social-medias {
     #carousel .btn-purple{
         margin-bottom: 0;
     }
-    #carousel a{
+    #carousel .btn-purple,
+    #carousel .btn-white{
         padding: 10px 20px;
-    }    
+    }
+    #cellphones .rotacao {
+        padding-top: 40px;
+    }
 }
 
 @media (min-width: 992px) { 
     #carousel h1{
         font-size: 5em;
     }
+    #cellphones .rotacao {
+        padding-top: 0px;
+    }   
  }
 
 @media (min-width: 1200px) { 
     #carousel h1{
         font-size: 6em;
     }
+    
  }
